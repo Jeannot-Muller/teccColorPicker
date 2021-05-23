@@ -38,7 +38,6 @@ Inherits WebSDKUIControl
 		          If Me.Enabled Then
 		            objectid = Parameters.value("ID")
 		            mvalue = Parameters.value("value")
-		            break
 		            teccColorPickerChange()
 		            
 		            Return True
@@ -74,7 +73,8 @@ Inherits WebSDKUIControl
 	#tag Event
 		Sub Opening()
 		  Self.Style.value("outline") = "none"
-		  value = "#" + InitialColor.ToString.right(6)
+		  
+		  value = InitialColor
 		  
 		  
 		  
@@ -86,7 +86,7 @@ Inherits WebSDKUIControl
 		Sub Serialize(js as JSONItem)
 		  // Use this method to serialize the data your control needs for initial setup
 		  
-		  js.value("value") = "#" + value.Right(6)
+		  js.value("value") = "#" + value.tostring.Right(6)
 		  js.value("myheight") = Me.Height
 		  'js.value("coloron") = "#" + ActiveColor.ToString.Right(6)
 		  'js.value("coloroff") = "#" + DeactiveColor.ToString.Right(6)
@@ -222,7 +222,7 @@ Inherits WebSDKUIControl
 		#tag Note
 			mValue = value
 		#tag EndNote
-		Private mvalue As string
+		Private mvalue As color
 	#tag EndProperty
 
 	#tag Property, Flags = &h21
@@ -246,7 +246,7 @@ Inherits WebSDKUIControl
 			  Call teccColorPickerChange()
 			End Set
 		#tag EndSetter
-		value As string
+		value As color
 	#tag EndComputedProperty
 
 
@@ -377,17 +377,9 @@ Inherits WebSDKUIControl
 			Name="value"
 			Visible=false
 			Group="Behavior"
-			InitialValue=""
-			Type="string"
-			EditorType="MultiLineEditor"
-		#tag EndViewProperty
-		#tag ViewProperty
-			Name="InitialColor"
-			Visible=true
-			Group="Visual Controls"
-			InitialValue="&c0096ff"
+			InitialValue="&c000000"
 			Type="color"
-			EditorType=""
+			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="TabIndex"
@@ -403,6 +395,14 @@ Inherits WebSDKUIControl
 			Group="Visual Controls"
 			InitialValue="True"
 			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="InitialColor"
+			Visible=true
+			Group="teccColorPicker"
+			InitialValue="&c0096ff"
+			Type="color"
 			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty

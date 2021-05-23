@@ -55,7 +55,7 @@ Begin WebPage wpDEMO
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   155
+      Top             =   242
       Underline       =   False
       Visible         =   True
       Width           =   100
@@ -110,7 +110,7 @@ Begin WebPage wpDEMO
       Scope           =   0
       TabIndex        =   60
       Tooltip         =   ""
-      Top             =   266
+      Top             =   294
       Visible         =   True
       Width           =   1007
       _mDesignHeight  =   0
@@ -237,34 +237,6 @@ Begin WebPage wpDEMO
       _mPanelIndex    =   -1
       _ProtectImage   =   False
    End
-   Begin WebRectangle Rectangle4
-      BackgroundColor =   &cC0C0C000
-      ControlID       =   ""
-      Enabled         =   True
-      HasBackgroundColor=   True
-      Height          =   354
-      Index           =   -2147483648
-      Indicator       =   0
-      LayoutDirection =   0
-      LayoutType      =   0
-      Left            =   855
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   0
-      TabIndex        =   77
-      Tooltip         =   ""
-      Top             =   113
-      Visible         =   True
-      Width           =   4
-      _mDesignHeight  =   0
-      _mDesignWidth   =   0
-      _mPanelIndex    =   -1
-   End
    Begin WebLabel lblStatus6
       Bold            =   False
       ControlID       =   ""
@@ -387,45 +359,13 @@ Begin WebPage wpDEMO
       Width           =   315
       _mPanelIndex    =   -1
    End
-   Begin WebTextField TextField1
-      AllowAutoComplete=   False
-      AllowSpellChecking=   False
-      Caption         =   ""
-      ControlID       =   ""
-      Enabled         =   True
-      FieldType       =   2
-      Height          =   38
-      Hint            =   ""
-      Index           =   -2147483648
-      Indicator       =   ""
-      Left            =   766
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      MaximumCharactersAllowed=   0
-      ReadOnly        =   False
-      Scope           =   2
-      TabIndex        =   88
-      TabStop         =   True
-      Text            =   ""
-      TextAlignment   =   0
-      Tooltip         =   ""
-      Top             =   126
-      Visible         =   True
-      Width           =   53
-      _mPanelIndex    =   -1
-   End
    Begin teccColorPicker teccColorPicker1
       ControlID       =   ""
       Enabled         =   True
       Height          =   34
       Index           =   -2147483648
-      Indicator       =   ""
-      InitialColor    =   &c0096FF00
+      Indicator       =   0
+      InitialColor    =   &cFF930000
       Left            =   266
       LockBottom      =   False
       LockedInPosition=   False
@@ -436,12 +376,301 @@ Begin WebPage wpDEMO
       LockVertical    =   False
       Scope           =   2
       TabIndex        =   89
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   172
-      value           =   ""
+      Top             =   113
+      value           =   &c00000000
+      Visible         =   True
+      Width           =   34
+      _mPanelIndex    =   -1
+   End
+   Begin WebTextField TextField1
+      AllowAutoComplete=   False
+      AllowSpellChecking=   False
+      Caption         =   ""
+      ControlID       =   ""
+      Enabled         =   False
+      FieldType       =   0
+      Height          =   38
+      Hint            =   ""
+      Index           =   -2147483648
+      Indicator       =   ""
+      Left            =   266
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      MaximumCharactersAllowed=   0
+      ReadOnly        =   False
+      Scope           =   2
+      TabIndex        =   90
+      TabStop         =   True
+      Text            =   ""
+      TextAlignment   =   0
+      Tooltip         =   ""
+      Top             =   242
+      Visible         =   True
+      Width           =   125
+      _mPanelIndex    =   -1
+   End
+   Begin teccColorPicker teccColorPicker2
+      ControlID       =   ""
+      Enabled         =   True
+      Height          =   34
+      Index           =   -2147483648
+      Indicator       =   0
+      InitialColor    =   &c0096FF00
+      Left            =   399
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   2
+      TabIndex        =   91
+      Tooltip         =   ""
+      Top             =   113
+      value           =   &c00000000
+      Visible         =   True
+      Width           =   125
+      _mPanelIndex    =   -1
+   End
+   Begin WebTextField TextField2
+      AllowAutoComplete=   False
+      AllowSpellChecking=   False
+      Caption         =   ""
+      ControlID       =   ""
+      Enabled         =   False
+      FieldType       =   0
+      Height          =   38
+      Hint            =   ""
+      Index           =   -2147483648
+      indicator       =   0
+      Left            =   399
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      MaximumCharactersAllowed=   0
+      PanelIndex      =   0
+      ReadOnly        =   False
+      Scope           =   2
+      TabIndex        =   92
+      TabStop         =   True
+      Text            =   ""
+      TextAlignment   =   0
+      Tooltip         =   ""
+      Top             =   242
+      Visible         =   True
+      Width           =   125
+      _mPanelIndex    =   -1
+   End
+   Begin teccColorPicker teccColorPicker3
+      ControlID       =   ""
+      Enabled         =   True
+      Height          =   100
+      Index           =   -2147483648
+      Indicator       =   0
+      InitialColor    =   &cD783FF00
+      Left            =   533
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   2
+      TabIndex        =   93
+      Tooltip         =   ""
+      Top             =   113
+      value           =   &c00000000
       Visible         =   True
       Width           =   100
+      _mPanelIndex    =   -1
+   End
+   Begin WebTextField TextField3
+      AllowAutoComplete=   False
+      AllowSpellChecking=   False
+      Caption         =   ""
+      ControlID       =   ""
+      Enabled         =   False
+      FieldType       =   0
+      Height          =   44
+      Hint            =   ""
+      Index           =   -2147483648
+      indicator       =   0
+      Left            =   532
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      MaximumCharactersAllowed=   0
+      PanelIndex      =   0
+      ReadOnly        =   False
+      Scope           =   2
+      TabIndex        =   94
+      TabStop         =   True
+      Text            =   ""
+      TextAlignment   =   0
+      Tooltip         =   ""
+      Top             =   242
+      Visible         =   True
+      Width           =   125
+      _mPanelIndex    =   -1
+   End
+   Begin teccColorPicker teccColorPicker5
+      ControlID       =   ""
+      Enabled         =   False
+      Height          =   34
+      Index           =   -2147483648
+      Indicator       =   0
+      InitialColor    =   &c72FA7800
+      Left            =   827
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   2
+      TabIndex        =   95
+      Tooltip         =   ""
+      Top             =   113
+      value           =   &c00000000
+      Visible         =   True
+      Width           =   125
+      _mPanelIndex    =   -1
+   End
+   Begin WebTextField TextField5
+      AllowAutoComplete=   False
+      AllowSpellChecking=   False
+      Caption         =   ""
+      ControlID       =   ""
+      Enabled         =   False
+      FieldType       =   0
+      Height          =   38
+      Hint            =   ""
+      Index           =   -2147483648
+      indicator       =   0
+      Left            =   827
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      MaximumCharactersAllowed=   0
+      PanelIndex      =   0
+      ReadOnly        =   False
+      Scope           =   2
+      TabIndex        =   96
+      TabStop         =   True
+      Text            =   ""
+      TextAlignment   =   0
+      Tooltip         =   ""
+      Top             =   242
+      Visible         =   True
+      Width           =   125
+      _mPanelIndex    =   -1
+   End
+   Begin teccColorPicker teccColorPicker4
+      ControlID       =   ""
+      Enabled         =   True
+      Height          =   100
+      Index           =   -2147483648
+      Indicator       =   0
+      InitialColor    =   &c72FA7800
+      Left            =   665
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   2
+      TabIndex        =   97
+      Tooltip         =   ""
+      Top             =   113
+      value           =   &c00000000
+      Visible         =   True
+      Width           =   54
+      _mPanelIndex    =   -1
+   End
+   Begin WebTextField TextField4
+      AllowAutoComplete=   False
+      AllowSpellChecking=   False
+      Caption         =   ""
+      ControlID       =   ""
+      Enabled         =   False
+      FieldType       =   0
+      Height          =   38
+      Hint            =   ""
+      Index           =   -2147483648
+      indicator       =   0
+      Left            =   665
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      MaximumCharactersAllowed=   0
+      PanelIndex      =   0
+      ReadOnly        =   False
+      Scope           =   2
+      TabIndex        =   98
+      TabStop         =   True
+      Text            =   ""
+      TextAlignment   =   0
+      Tooltip         =   ""
+      Top             =   242
+      Visible         =   True
+      Width           =   125
+      _mPanelIndex    =   -1
+   End
+   Begin WebRectangle Rectangle4
+      BackgroundColor =   &cC0C0C000
+      ControlID       =   ""
+      Enabled         =   True
+      HasBackgroundColor=   True
+      Height          =   354
+      Index           =   -2147483648
+      Indicator       =   0
+      LayoutDirection =   0
+      LayoutType      =   0
+      Left            =   808
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      PanelIndex      =   0
+      Scope           =   0
+      TabIndex        =   99
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   113
+      Visible         =   True
+      Width           =   2
+      _mDesignHeight  =   0
+      _mDesignWidth   =   0
       _mPanelIndex    =   -1
    End
 End
@@ -450,6 +679,13 @@ End
 #tag WindowCode
 	#tag Event
 		Sub Opening()
+		  TextField1.Text = teccColorPicker1.value.ToString
+		  TextField2.Text = teccColorPicker2.value.ToString
+		  TextField3.Text = teccColorPicker3.value.ToString
+		  TextField4.Text = teccColorPicker4.value.ToString
+		  
+		  teccColorPicker5.value = &cff0000
+		  TextField5.Text = teccColorPicker5.value.ToString
 		  
 		  
 		  
@@ -501,6 +737,41 @@ End
 	#tag Event
 		Sub Pressed()
 		  session.GoToURL( "https://blog.xojodocs.com", true )
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events teccColorPicker1
+	#tag Event , Description = 4669726573207768656E2074686520636F6E74726F6C20697320636C69636B65642E2052657475726E7320746865206368616E676564207374617475732E0A737461747573203D2074686520737461747573206F662074686520636F6E74726F6C2E0A6F626A6563746964203D20746865206964206F6620746865206372656174656420444F4D20656C656D656E742E
+		Sub teccColorPickerChange()
+		  TextField1.Text = teccColorPicker1.value.ToString
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events teccColorPicker2
+	#tag Event , Description = 4669726573207768656E2074686520636F6E74726F6C20697320636C69636B65642E2052657475726E7320746865206368616E676564207374617475732E0A737461747573203D2074686520737461747573206F662074686520636F6E74726F6C2E0A6F626A6563746964203D20746865206964206F6620746865206372656174656420444F4D20656C656D656E742E
+		Sub teccColorPickerChange()
+		  TextField2.Text = teccColorPicker2.value.ToString
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events teccColorPicker3
+	#tag Event , Description = 4669726573207768656E2074686520636F6E74726F6C20697320636C69636B65642E2052657475726E7320746865206368616E676564207374617475732E0A737461747573203D2074686520737461747573206F662074686520636F6E74726F6C2E0A6F626A6563746964203D20746865206964206F6620746865206372656174656420444F4D20656C656D656E742E
+		Sub teccColorPickerChange()
+		  TextField3.Text = teccColorPicker3.value.ToString
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events teccColorPicker5
+	#tag Event , Description = 4669726573207768656E2074686520636F6E74726F6C20697320636C69636B65642E2052657475726E7320746865206368616E676564207374617475732E0A737461747573203D2074686520737461747573206F662074686520636F6E74726F6C2E0A6F626A6563746964203D20746865206964206F6620746865206372656174656420444F4D20656C656D656E742E
+		Sub teccColorPickerChange()
+		  TextField4.Text = teccColorPicker4.value.ToString
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events teccColorPicker4
+	#tag Event , Description = 4669726573207768656E2074686520636F6E74726F6C20697320636C69636B65642E2052657475726E7320746865206368616E676564207374617475732E0A737461747573203D2074686520737461747573206F662074686520636F6E74726F6C2E0A6F626A6563746964203D20746865206964206F6620746865206372656174656420444F4D20656C656D656E742E
+		Sub teccColorPickerChange()
+		  TextField2.Text = teccColorPicker2.value.ToString
 		End Sub
 	#tag EndEvent
 #tag EndEvents
