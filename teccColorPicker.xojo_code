@@ -41,9 +41,9 @@ Inherits WebSDKUIControl
 		        If parameters.value("target") = "INPUT" Then
 		          If Me.Enabled Then
 		            objectid = Parameters.value("ID")
-		            mvalue = Parameters.value("value")
+		            Var interim As String = Parameters.value("value")
+		            mvalue = Color.FromString( "&h00" + interim.Right(6) )
 		            teccColorPickerChange()
-		            
 		            Return True
 		          End If 
 		        End If

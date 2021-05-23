@@ -407,7 +407,6 @@ Begin WebPage wpDEMO
       ReadOnly        =   False
       Scope           =   2
       TabIndex        =   90
-      TabStop         =   True
       Text            =   ""
       TextAlignment   =   0
       Tooltip         =   ""
@@ -451,7 +450,7 @@ Begin WebPage wpDEMO
       Height          =   38
       Hint            =   ""
       Index           =   -2147483648
-      indicator       =   0
+      Indicator       =   0
       Left            =   399
       LockBottom      =   False
       LockedInPosition=   False
@@ -461,11 +460,9 @@ Begin WebPage wpDEMO
       LockTop         =   True
       LockVertical    =   False
       MaximumCharactersAllowed=   0
-      PanelIndex      =   0
       ReadOnly        =   False
       Scope           =   2
       TabIndex        =   92
-      TabStop         =   True
       Text            =   ""
       TextAlignment   =   0
       Tooltip         =   ""
@@ -509,7 +506,7 @@ Begin WebPage wpDEMO
       Height          =   44
       Hint            =   ""
       Index           =   -2147483648
-      indicator       =   0
+      Indicator       =   0
       Left            =   532
       LockBottom      =   False
       LockedInPosition=   False
@@ -519,11 +516,9 @@ Begin WebPage wpDEMO
       LockTop         =   True
       LockVertical    =   False
       MaximumCharactersAllowed=   0
-      PanelIndex      =   0
       ReadOnly        =   False
       Scope           =   2
       TabIndex        =   94
-      TabStop         =   True
       Text            =   ""
       TextAlignment   =   0
       Tooltip         =   ""
@@ -567,7 +562,7 @@ Begin WebPage wpDEMO
       Height          =   38
       Hint            =   ""
       Index           =   -2147483648
-      indicator       =   0
+      Indicator       =   0
       Left            =   827
       LockBottom      =   False
       LockedInPosition=   False
@@ -577,11 +572,9 @@ Begin WebPage wpDEMO
       LockTop         =   True
       LockVertical    =   False
       MaximumCharactersAllowed=   0
-      PanelIndex      =   0
       ReadOnly        =   False
       Scope           =   2
       TabIndex        =   96
-      TabStop         =   True
       Text            =   ""
       TextAlignment   =   0
       Tooltip         =   ""
@@ -625,7 +618,7 @@ Begin WebPage wpDEMO
       Height          =   38
       Hint            =   ""
       Index           =   -2147483648
-      indicator       =   0
+      Indicator       =   0
       Left            =   665
       LockBottom      =   False
       LockedInPosition=   False
@@ -635,11 +628,9 @@ Begin WebPage wpDEMO
       LockTop         =   True
       LockVertical    =   False
       MaximumCharactersAllowed=   0
-      PanelIndex      =   0
       ReadOnly        =   False
       Scope           =   2
       TabIndex        =   98
-      TabStop         =   True
       Text            =   ""
       TextAlignment   =   0
       Tooltip         =   ""
@@ -666,10 +657,8 @@ Begin WebPage wpDEMO
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   99
-      TabStop         =   True
       Tooltip         =   ""
       Top             =   113
       Visible         =   True
@@ -769,14 +758,14 @@ End
 #tag Events teccColorPicker5
 	#tag Event , Description = 4669726573207768656E2074686520636F6E74726F6C20697320636C69636B65642E2052657475726E7320746865206368616E676564207374617475732E0A737461747573203D2074686520737461747573206F662074686520636F6E74726F6C2E0A6F626A6563746964203D20746865206964206F6620746865206372656174656420444F4D20656C656D656E742E
 		Sub teccColorPickerChange()
-		  TextField4.Text = teccColorPicker4.value.ToString
+		  TextField5.Text = teccColorPicker5.value.ToString
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events teccColorPicker4
 	#tag Event , Description = 4669726573207768656E2074686520636F6E74726F6C20697320636C69636B65642E2052657475726E7320746865206368616E676564207374617475732E0A737461747573203D2074686520737461747573206F662074686520636F6E74726F6C2E0A6F626A6563746964203D20746865206964206F6620746865206372656174656420444F4D20656C656D656E742E
 		Sub teccColorPickerChange()
-		  TextField2.Text = teccColorPicker2.value.ToString
+		  TextField4.Text = teccColorPicker4.value.ToString
 		End Sub
 	#tag EndEvent
 #tag EndEvents
