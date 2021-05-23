@@ -110,7 +110,7 @@ Begin WebPage wpDEMO
       Scope           =   0
       TabIndex        =   60
       Tooltip         =   ""
-      Top             =   201
+      Top             =   266
       Visible         =   True
       Width           =   1007
       _mDesignHeight  =   0
@@ -387,30 +387,6 @@ Begin WebPage wpDEMO
       Width           =   315
       _mPanelIndex    =   -1
    End
-   Begin teccColorPicker teccColorPicker1
-      ControlID       =   ""
-      Enabled         =   True
-      Height          =   34
-      Index           =   -2147483648
-      Indicator       =   ""
-      Left            =   262
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   2
-      TabIndex        =   87
-      TabStop         =   True
-      Tooltip         =   ""
-      Top             =   126
-      value           =   False
-      Visible         =   True
-      Width           =   100
-      _mPanelIndex    =   -1
-   End
    Begin WebTextField TextField1
       AllowAutoComplete=   False
       AllowSpellChecking=   False
@@ -422,7 +398,7 @@ Begin WebPage wpDEMO
       Hint            =   ""
       Index           =   -2147483648
       Indicator       =   ""
-      Left            =   465
+      Left            =   766
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -440,7 +416,32 @@ Begin WebPage wpDEMO
       Tooltip         =   ""
       Top             =   126
       Visible         =   True
-      Width           =   200
+      Width           =   53
+      _mPanelIndex    =   -1
+   End
+   Begin teccColorPicker teccColorPicker1
+      ControlID       =   ""
+      Enabled         =   True
+      Height          =   34
+      Index           =   -2147483648
+      Indicator       =   ""
+      InitialColor    =   &c0096FF00
+      Left            =   266
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   2
+      TabIndex        =   89
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   172
+      value           =   ""
+      Visible         =   True
+      Width           =   100
       _mPanelIndex    =   -1
    End
 End
@@ -500,13 +501,6 @@ End
 	#tag Event
 		Sub Pressed()
 		  session.GoToURL( "https://blog.xojodocs.com", true )
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events teccColorPicker1
-	#tag Event , Description = 4669726573207768656E2074686520636F6E74726F6C20697320636C69636B65642E2052657475726E7320746865206368616E676564207374617475732E0A737461747573203D2074686520737461747573206F662074686520636F6E74726F6C2E0A6F626A6563746964203D20746865206964206F6620746865206372656174656420444F4D20656C656D656E742E
-		Sub teccColorPickerChange()
-		  break
 		End Sub
 	#tag EndEvent
 #tag EndEvents
