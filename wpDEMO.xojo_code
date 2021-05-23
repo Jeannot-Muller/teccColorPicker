@@ -374,13 +374,14 @@ Begin WebPage wpDEMO
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
+      NoBorder        =   False
       Scope           =   2
       TabIndex        =   89
       Tooltip         =   ""
       Top             =   113
       value           =   &c00000000
       Visible         =   True
-      Width           =   34
+      Width           =   38
       _mPanelIndex    =   -1
    End
    Begin WebTextField TextField1
@@ -430,6 +431,7 @@ Begin WebPage wpDEMO
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
+      NoBorder        =   False
       Scope           =   2
       TabIndex        =   91
       Tooltip         =   ""
@@ -487,6 +489,7 @@ Begin WebPage wpDEMO
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
+      NoBorder        =   False
       Scope           =   2
       TabIndex        =   93
       Tooltip         =   ""
@@ -544,6 +547,7 @@ Begin WebPage wpDEMO
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
+      NoBorder        =   False
       Scope           =   2
       TabIndex        =   95
       Tooltip         =   ""
@@ -601,6 +605,7 @@ Begin WebPage wpDEMO
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
+      NoBorder        =   True
       Scope           =   2
       TabIndex        =   97
       Tooltip         =   ""
