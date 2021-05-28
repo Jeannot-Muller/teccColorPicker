@@ -28,6 +28,7 @@ Begin WebPage wpDEMO
    _ImplicitInstance=   False
    _mDesignHeight  =   0
    _mDesignWidth   =   0
+   _mName          =   ""
    _mPanelIndex    =   -1
    Begin WebLabel lblValue
       Bold            =   True
@@ -208,34 +209,6 @@ Begin WebPage wpDEMO
       Visible         =   True
       Width           =   303
       _mPanelIndex    =   -1
-   End
-   Begin WebImageViewer mvxLogo
-      ControlID       =   ""
-      Enabled         =   True
-      Height          =   117
-      HorizontalAlignment=   2
-      Index           =   -2147483648
-      Indicator       =   0
-      Left            =   727
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Picture         =   1137932287
-      Scope           =   2
-      SVGData         =   ""
-      TabIndex        =   64
-      Tooltip         =   ""
-      Top             =   603
-      URL             =   ""
-      VerticalAlignment=   2
-      Visible         =   True
-      Width           =   300
-      _mPanelIndex    =   -1
-      _ProtectImage   =   False
    End
    Begin WebLabel lblStatus6
       Bold            =   False
@@ -683,6 +656,7 @@ End
 		  
 		  
 		  
+		  
 		End Sub
 	#tag EndEvent
 
@@ -708,22 +682,6 @@ End
 		Sub Opening()
 		  Me.Style.Cursor = WebStyle.Cursors.Pointer
 		  Me.SVGData = thefairlogo
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events mvxLogo
-	#tag Event
-		Sub Pressed(x as Integer, y as Integer)
-		  #Pragma unused x
-		  #Pragma unused y
-		  
-		  Session.GoToURL("https://blog.xojodocs.com", False)
-		  
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub Opening()
-		  Me.Style.Cursor = WebStyle.Cursors.Pointer
 		End Sub
 	#tag EndEvent
 #tag EndEvents

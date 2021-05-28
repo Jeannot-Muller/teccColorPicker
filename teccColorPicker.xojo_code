@@ -207,12 +207,32 @@ Inherits WebSDKUIControl
 	#tag EndHook
 
 
-	#tag Property, Flags = &h0
-		InitialColor As color = &c0096ff
-	#tag EndProperty
+	#tag ComputedProperty, Flags = &h0
+		#tag Getter
+			Get
+			  Return mInitialColor
+			End Get
+		#tag EndGetter
+		#tag Setter
+			Set
+			  mInitialColor = value
+			  UpdateControl
+			  
+			End Set
+		#tag EndSetter
+		InitialColor As color
+	#tag EndComputedProperty
 
 	#tag Property, Flags = &h21
 		Private Shared JSFramework As WebFile
+	#tag EndProperty
+
+	#tag Property, Flags = &h21
+		Private mInitialColor As color = &c0096ff
+	#tag EndProperty
+
+	#tag Property, Flags = &h21
+		Private mNoBorder As boolean = false
 	#tag EndProperty
 
 	#tag Property, Flags = &h21
@@ -222,9 +242,21 @@ Inherits WebSDKUIControl
 		Private mvalue As color
 	#tag EndProperty
 
-	#tag Property, Flags = &h0
-		NoBorder As boolean = false
-	#tag EndProperty
+	#tag ComputedProperty, Flags = &h0
+		#tag Getter
+			Get
+			  Return mNoBorder
+			End Get
+		#tag EndGetter
+		#tag Setter
+			Set
+			  mNoBorder = value
+			  UpdateControl
+			  
+			End Set
+		#tag EndSetter
+		NoBorder As boolean
+	#tag EndComputedProperty
 
 	#tag Property, Flags = &h21
 		Private objectid As string
@@ -243,7 +275,7 @@ Inherits WebSDKUIControl
 		#tag Setter
 			Set
 			  mvalue = value
-			  
+			  UpdateControl
 			  Call teccColorPickerChange()
 			End Set
 		#tag EndSetter
@@ -375,14 +407,6 @@ Inherits WebSDKUIControl
 			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
-			Name="value"
-			Visible=false
-			Group="Behavior"
-			InitialValue="&c000000"
-			Type="color"
-			EditorType="MultiLineEditor"
-		#tag EndViewProperty
-		#tag ViewProperty
 			Name="TabIndex"
 			Visible=true
 			Group="Visual Controls"
@@ -399,10 +423,18 @@ Inherits WebSDKUIControl
 			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
+			Name="value"
+			Visible=false
+			Group="teccColorPicker"
+			InitialValue="&c000000"
+			Type="color"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
 			Name="InitialColor"
 			Visible=true
 			Group="teccColorPicker"
-			InitialValue="&c0096ff"
+			InitialValue="&c000000"
 			Type="color"
 			EditorType=""
 		#tag EndViewProperty
@@ -410,7 +442,7 @@ Inherits WebSDKUIControl
 			Name="NoBorder"
 			Visible=true
 			Group="teccColorPicker"
-			InitialValue="false"
+			InitialValue=""
 			Type="boolean"
 			EditorType=""
 		#tag EndViewProperty
